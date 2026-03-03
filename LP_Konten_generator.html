@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PixelBot — Buat Konten Visual AI Langsung dari Telegram</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🎨 Ketik di Telegram → Gambar AI siap dalam <strong>&lt; 30 detik</strong>
+  <span class="tg-pill">
+    <svg viewBox="0 0 24 24" fill="currentColor" style="width:11px;height:11px"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.48 14.048l-2.95-.924c-.641-.201-.654-.641.136-.953l11.57-4.461c.537-.194 1.006.131.327.538z"/></svg>
+    Telegram Bot
+  </span>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">Pixel<span>Bot</span></div>
+  <div class="nav-links">
+    <a href="#how">Cara Kerja</a>
+    <a href="#fitur">Fitur</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#pricing">Harga</a>
+  </div>
+  <a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20tertarik%20dengan%20layanan%20AI%20Image%20Generator%20via%20Telegram" class="nav-cta" target="_blank">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+    Konsultasi Gratis
+  </a>
+</nav>
+
+<!-- HERO -->
+<div style="border-bottom:1px solid var(--border); overflow:hidden;">
+<div class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">
+      <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.248l-1.97 9.289c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.48 14.048l-2.95-.924c-.641-.201-.654-.641.136-.953l11.57-4.461c.537-.194 1.006.131.327.538z"/></svg>
+      n8n · Telegram Bot · GPT-4o · Image AI
+    </div>
+    <h1>
+      KETIK.<br>
+      <span class="tg-color">KIRIM.</span><br>
+      <span class="stroke">GAMBAR</span><br>
+      JADI.
+    </h1>
+    <p class="hero-desc">
+      Bot Telegram yang mengubah teks kamu menjadi konten visual berkualitas tinggi dalam hitungan detik. Buat konten sosmed, iklan, thumbnail — langsung dari chat Telegram.
+    </p>
+    <div class="hero-ctas">
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20mau%20tanya%20soal%20AI%20Image%20Generator%20via%20Telegram" class="btn-wa-big" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Chat WhatsApp — Gratis Konsultasi
+      </a>
+      <div class="btn-micro">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+        Respon &lt; 1 jam · Konsultasi gratis · Tanpa kewajiban
+      </div>
+      <div class="hero-badges">
+        <div class="avs">
+          <div class="av" style="background:#fbbf24;color:#78350f">K</div>
+          <div class="av" style="background:#60a5fa;color:#1e3a5f">A</div>
+          <div class="av" style="background:#f87171;color:#7f1d1d">R</div>
+          <div class="av" style="background:#a78bfa;color:#3b0764">S</div>
+        </div>
+        <div class="badge-txt">
+          <strong>Dipercaya 25+ kreator & bisnis</strong>
+          konten sosmed, agency ads, hingga brand lokal
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Gallery + Chat -->
+  <div class="hero-right">
+    <div class="img-gallery">
+      <div class="img-card ig-1">
+        <div class="ai-gen-badge">✨ AI</div>
+        <div class="img-label">Produk lifestyle</div>
+      </div>
+      <div class="img-card ig-2">
+        <div class="ai-gen-badge">✨ AI</div>
+        <div class="img-label">Banner promo</div>
+      </div>
+      <div class="img-card ig-3">
+        <div class="ai-gen-badge">✨ AI</div>
+        <div class="img-label">Thumbnail YT</div>
+      </div>
+    </div>
+
+    <div style="position:relative; width:100%; margin-top:16px;">
+      <div class="speed-badge">
+        <div class="big">30s</div>
+        <div class="label">Gambar<br>jadi!</div>
+      </div>
+      <div class="tg-chat">
+        <div class="tg-bar">
+          <div class="tg-av">🤖</div>
+          <div>
+            <div class="tg-name">PixelBot AI</div>
+            <div class="tg-status">online — siap generate</div>
+          </div>
+        </div>
+        <div class="tg-body">
+          <div class="tg-msg me">
+            <div class="tg-bubble">Buatkan foto produk skincare di atas marmer putih, pencahayaan studio, gaya minimalis</div>
+            <div class="tg-time">14:23</div>
+          </div>
+          <div class="tg-msg bot">
+            <div class="tg-bubble">⚡ Generating gambar kamu...<br>Estimasi 20–30 detik</div>
+            <div class="tg-time">14:23</div>
+          </div>
+          <div class="tg-image-msg">
+            <div class="tg-image-preview" style="height:160px;">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:40px;">🧴</div>
+              <div class="img-gen-tag">✨ AI Generated</div>
+            </div>
+            <div class="tg-time">14:23 · Selesai dalam 28 detik</div>
+          </div>
+          <div class="tg-msg bot">
+            <div class="tg-bubble">✅ Gambar siap! Mau versi lain dengan background berbeda?</div>
+            <div class="tg-time">14:23</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="marquee-item accent">KONTEN SOSMED</span><span class="marquee-dot"></span>
+    <span class="marquee-item">BANNER IKLAN</span><span class="marquee-dot"></span>
+    <span class="marquee-item accent">FOTO PRODUK</span><span class="marquee-dot"></span>
+    <span class="marquee-item">THUMBNAIL</span><span class="marquee-dot"></span>
+    <span class="marquee-item accent">POSTER EVENT</span><span class="marquee-dot"></span>
+    <span class="marquee-item">ILUSTRASI BRAND</span><span class="marquee-dot"></span>
+    <span class="marquee-item accent">MOCKUP PRODUK</span><span class="marquee-dot"></span>
+    <span class="marquee-item">KONTEN FEED</span><span class="marquee-dot"></span>
+    <!-- repeat -->
+    <span class="marquee-item accent">KONTEN SOSMED</span><span class="marquee-dot"></span>
+    <span class="marquee-item">BANNER IKLAN</span><span class="marquee-dot"></span>
+    <span class="marquee-item accent">FOTO PRODUK</span><span class="marquee-dot"></span>
+    <span class="marquee-item">THUMBNAIL</span><span class="marquee-dot"></span>
+    <span class="marquee-item accent">POSTER EVENT</span><span class="marquee-dot"></span>
+    <span class="marquee-item">ILUSTRASI BRAND</span><span class="marquee-dot"></span>
+    <span class="marquee-item accent">MOCKUP PRODUK</span><span class="marquee-dot"></span>
+    <span class="marquee-item">KONTEN FEED</span><span class="marquee-dot"></span>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<section class="section" id="masalah">
+  <div class="sec-tag">MASALAH</div>
+  <h2 class="sec-h2">BIKIN KONTEN ITU<br>MAKAN WAKTU</h2>
+  <p class="sec-sub">Kalau kamu seorang pebisnis atau kreator, pasti tahu betapa ribetnya ini.</p>
+  <div class="problem-grid reveal">
+    <div class="prob-card">
+      <div class="prob-icon">⏳</div>
+      <div class="prob-title">Desainer butuh waktu berhari-hari</div>
+      <p class="prob-desc">Brief ke desainer, revisi, tunggu, revisi lagi. Untuk satu konten bisa makan 3–5 hari. Padahal kebutuhan konten terus datang setiap hari.</p>
+    </div>
+    <div class="prob-card">
+      <div class="prob-icon">💰</div>
+      <div class="prob-title">Biaya desainer mahal & tidak scalable</div>
+      <p class="prob-desc">Desainer freelance Rp150–500rb per gambar. Kalau butuh 30 konten sebulan, angkanya bisa jutaan. Belum lagi kalau perlu revisi.</p>
+    </div>
+    <div class="prob-card">
+      <div class="prob-icon">🤯</div>
+      <div class="prob-title">Tool AI rumit dan butuh skill khusus</div>
+      <p class="prob-desc">Midjourney, DALL-E, Stable Diffusion — semua punya learning curve. Harus belajar prompt engineering, bayar langganan, dan prosesnya tidak praktis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how" style="background:var(--white);max-width:100%;padding:96px 60px;border-top:1px solid var(--border)">
+<div style="max-width:1280px;margin:0 auto">
+  <div class="sec-tag">CARA KERJA</div>
+  <h2 class="sec-h2">SEMUDAH KIRIM<br>PESAN TELEGRAM</h2>
+  <p class="sec-sub" style="margin-bottom:48px">Tidak perlu belajar software baru. Tidak perlu install apapun. Cukup chat.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start">
+    <div class="how-timeline reveal">
+      <div class="how-step">
+        <div class="step-dot sd-1">1</div>
+        <div class="step-content">
+          <div class="step-time-badge">⚡ Langsung</div>
+          <div class="step-title">Ketik deskripsi gambar</div>
+          <p class="step-desc">Ceritakan gambar yang kamu mau dalam bahasa Indonesia atau Inggris. Semakin detail, semakin bagus hasilnya.</p>
+          <div class="step-demo">
+            <div class="sd-row right">
+              <div class="sd-bubble user">Buatkan banner promo 11.11 untuk toko fashion, warna hitam emas, elegan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="step-dot sd-2">2</div>
+        <div class="step-content">
+          <div class="step-time-badge">🤖 Otomatis</div>
+          <div class="step-title">AI memproses & generate</div>
+          <p class="step-desc">n8n workflow aktif: teks kamu dikirim ke GPT-4o untuk optimasi prompt, lalu ke model image generation terbaik.</p>
+          <div class="step-demo">
+            <div class="sd-row">
+              <div class="sd-bubble bot">⚡ Memproses... GPT-4o mengoptimasi prompt kamu. Generasi gambar dimulai!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="step-dot sd-3">3</div>
+        <div class="step-content">
+          <div class="step-time-badge">🎨 20–30 detik</div>
+          <div class="step-title">Gambar terkirim ke chat</div>
+          <p class="step-desc">Gambar resolusi tinggi langsung muncul di chat Telegram kamu. Download, pakai, selesai.</p>
+          <div class="step-demo">
+            <div class="sd-row">
+              <div class="sd-img" style="background:linear-gradient(135deg,#f093fb,#f5576c);">👗</div>
+            </div>
+            <div class="sd-row">
+              <div class="sd-bubble bot">✅ Selesai! Gambar siap download. Mau variasi lain?</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="step-dot sd-4">4</div>
+        <div class="step-content">
+          <div class="step-time-badge">♾️ Terus menerus</div>
+          <div class="step-title">Generate sebanyak yang kamu mau</div>
+          <p class="step-desc">Tidak ada batasan sesi. Chat sepanjang hari, generate ratusan gambar, bot tetap siap melayani.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Workflow visual -->
+    <div class="reveal" style="position:sticky;top:88px;">
+      <div style="background:var(--bg);border:1px solid var(--border);border-radius:20px;padding:28px;box-shadow:var(--shadow);">
+        <div style="font-size:12px;font-weight:700;color:var(--dim);letter-spacing:0.1em;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;">
+          N8N WORKFLOW
+          <span style="background:var(--tg-soft);color:var(--tg);padding:3px 10px;border-radius:50px;font-size:10px;display:flex;align-items:center;gap:4px;">
+            <span style="width:5px;height:5px;border-radius:50%;background:var(--tg);animation:blink 1.5s infinite;"></span>
+            RUNNING
+          </span>
+        </div>
+        <!-- Nodes -->
+        <div style="display:flex;flex-direction:column;gap:0;">
+          <!-- node -->
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;position:relative;">
+            <div style="position:absolute;left:19px;bottom:-1px;width:2px;height:14px;background:repeating-linear-gradient(180deg,var(--border) 0,var(--border) 4px,transparent 4px,transparent 8px);"></div>
+            <div style="width:40px;height:40px;border-radius:10px;background:var(--tg-soft);border:1px solid rgba(34,158,217,0.3);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📱</div>
+            <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--ink);">Telegram Trigger</div><div style="font-size:11px;color:var(--muted);">Pesan & foto masuk</div></div>
+            <span style="background:var(--green-soft);color:var(--green);font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;">✓ Done</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;position:relative;">
+            <div style="position:absolute;left:19px;bottom:-1px;width:2px;height:14px;background:repeating-linear-gradient(180deg,var(--border) 0,var(--border) 4px,transparent 4px,transparent 8px);"></div>
+            <div style="width:40px;height:40px;border-radius:10px;background:var(--tg-soft);border:1px solid rgba(34,158,217,0.3);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🔍</div>
+            <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--ink);">Extract & Detect</div><div style="font-size:11px;color:var(--muted);">Teks atau foto referensi?</div></div>
+            <span style="background:var(--green-soft);color:var(--green);font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;">✓ Done</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;position:relative;">
+            <div style="position:absolute;left:19px;bottom:-1px;width:2px;height:14px;background:repeating-linear-gradient(180deg,var(--border) 0,var(--border) 4px,transparent 4px,transparent 8px);"></div>
+            <div style="width:40px;height:40px;border-radius:10px;background:var(--orange-soft);border:1px solid rgba(255,107,53,0.3);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🧠</div>
+            <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--ink);">GPT-4o Vision</div><div style="font-size:11px;color:var(--muted);">Optimasi & tulis prompt</div></div>
+            <span style="background:var(--orange-soft);color:var(--orange);font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;animation:blink 1.5s infinite;">● Running</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;position:relative;">
+            <div style="position:absolute;left:19px;bottom:-1px;width:2px;height:14px;background:repeating-linear-gradient(180deg,var(--border) 0,var(--border) 4px,transparent 4px,transparent 8px);"></div>
+            <div style="width:40px;height:40px;border-radius:10px;background:var(--white);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">🎨</div>
+            <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--ink);">GPT-Image-1 Generate</div><div style="font-size:11px;color:var(--muted);">Buat gambar resolusi tinggi</div></div>
+            <span style="background:var(--bg);color:var(--dim);font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;">Waiting</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:12px 0;">
+            <div style="width:40px;height:40px;border-radius:10px;background:var(--white);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;">📤</div>
+            <div style="flex:1"><div style="font-size:13px;font-weight:700;color:var(--ink);">Kirim ke Telegram</div><div style="font-size:11px;color:var(--muted);">Gambar masuk ke chat kamu</div></div>
+            <span style="background:var(--bg);color:var(--dim);font-size:10px;font-weight:700;padding:3px 10px;border-radius:50px;">Waiting</span>
+          </div>
+        </div>
+        <div style="height:1px;background:var(--border);margin:16px 0;"></div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;">
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--ink);">28s</div>
+            <div style="font-size:9px;color:var(--muted);margin-top:2px;letter-spacing:0.06em;">AVG TIME</div>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--ink);">1080p</div>
+            <div style="font-size:9px;color:var(--muted);margin-top:2px;letter-spacing:0.06em;">RESOLUSI</div>
+          </div>
+          <div style="background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px;text-align:center;">
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--ink);">∞</div>
+            <div style="font-size:9px;color:var(--muted);margin-top:2px;letter-spacing:0.06em;">GENERATE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="fitur">
+  <div class="features-inner">
+    <div class="sec-tag" style="color:var(--tg)">FITUR</div>
+    <h2 class="sec-h2" style="color:white">BUKAN SEKADAR<br>CHATBOT BIASA</h2>
+    <p class="sec-sub" style="color:rgba(255,255,255,0.4);margin-bottom:0">Ini AI image generator yang benar-benar cerdas dan siap pakai untuk konten profesional.</p>
+
+    <div class="feat-grid reveal">
+      <div class="feat-card">
+        <span class="feat-ic">📸</span>
+        <div class="feat-title">Kirim Foto Referensi</div>
+        <p class="feat-desc">Tidak punya kata-kata? Kirim foto yang kamu suka sebagai referensi. GPT Vision akan analisis dan buat gambar serupa untuk kontenmu.</p>
+        <div class="feat-pill fp-tg">📎 Mendukung foto input</div>
+      </div>
+      <div class="feat-card">
+        <span class="feat-ic">🎯</span>
+        <div class="feat-title">Prompt Otomatis Dioptimasi</div>
+        <p class="feat-desc">Kamu tidak perlu tahu cara nulis prompt yang sempurna. GPT-4o akan otomatis memperbaiki dan memperkaya deskripsimu sebelum generate.</p>
+        <div class="feat-pill fp-orange">⚡ Auto-enhance prompt</div>
+      </div>
+      <div class="feat-card">
+        <span class="feat-ic">🖼️</span>
+        <div class="feat-title">Resolusi Tinggi & Siap Pakai</div>
+        <p class="feat-desc">Gambar dihasilkan dalam resolusi tinggi yang siap langsung dipakai untuk posting sosmed, iklan, atau materi print tanpa perlu diedit lagi.</p>
+        <div class="feat-pill fp-purple">🔑 1024x1024 / 1792x1024</div>
+      </div>
+      <div class="feat-card">
+        <span class="feat-ic">🌐</span>
+        <div class="feat-title">Bahasa Indonesia & Inggris</div>
+        <p class="feat-desc">Ketik dalam bahasa Indonesia — bot langsung mengerti. Tidak perlu repot translate ke Inggris dulu untuk dapat hasil terbaik.</p>
+        <div class="feat-pill fp-tg">🇮🇩 Bilingual support</div>
+      </div>
+      <div class="feat-card">
+        <span class="feat-ic">🔁</span>
+        <div class="feat-title">Variasi & Revisi Mudah</div>
+        <p class="feat-desc">Tidak puas dengan hasilnya? Cukup balas chat dengan instruksi revisi. Bot akan generate versi baru berdasarkan feedback kamu.</p>
+        <div class="feat-pill fp-orange">♾️ Unlimited revisi</div>
+      </div>
+      <div class="feat-card">
+        <span class="feat-ic">⚡</span>
+        <div class="feat-title">Cepat & Tanpa Antrian</div>
+        <p class="feat-desc">Rata-rata gambar selesai dalam 20–35 detik. Tidak ada antrian, tidak ada batas harian — generate sebanyak yang dibutuhkan.</p>
+        <div class="feat-pill fp-purple">🚀 20–35 detik/gambar</div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px;">
+      <div class="sec-tag" style="color:var(--orange)">USE CASES</div>
+      <h3 style="font-family:'Bebas Neue',sans-serif;font-size:36px;color:white;letter-spacing:1px;margin-bottom:28px;">COCOK UNTUK SIAPA?</h3>
+      <div class="use-grid reveal">
+        <div class="use-card">
+          <div class="use-ic">🛍️</div>
+          <div>
+            <div class="use-title">Pemilik Toko Online</div>
+            <p class="use-desc">Buat foto produk lifestyle, banner promo, dan konten feed yang menarik tanpa sewa fotografer.</p>
+          </div>
+        </div>
+        <div class="use-card">
+          <div class="use-ic">📱</div>
+          <div>
+            <div class="use-title">Content Creator & Influencer</div>
+            <p class="use-desc">Generate thumbnail, ilustrasi, dan konten visual yang unik dan konsisten untuk feed kamu.</p>
+          </div>
+        </div>
+        <div class="use-card">
+          <div class="use-ic">🎯</div>
+          <div>
+            <div class="use-title">Digital Marketer & Agency</div>
+            <p class="use-desc">Buat variasi creative iklan dengan cepat untuk A/B testing tanpa bergantung desainer.</p>
+          </div>
+        </div>
+        <div class="use-card">
+          <div class="use-ic">🏢</div>
+          <div>
+            <div class="use-title">Brand & Bisnis Lokal</div>
+            <p class="use-desc">Buat materi marketing — poster, banner, dan visual sosmed — konsisten dengan brand identity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-section" id="galeri">
+  <div class="sec-tag">GALERI</div>
+  <h2 class="sec-h2">CONTOH HASIL<br>AI GENERATE</h2>
+  <p class="sec-sub" style="margin-bottom:0">Semua gambar di bawah dibuat dengan bot Telegram dalam &lt; 30 detik menggunakan prompt teks biasa.</p>
+  <div class="gallery-grid reveal">
+    <div class="gal-item big g1">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content">
+        <div class="gal-emoji">🌸</div>
+        <div class="gal-type" style="font-size:16px">Foto Produk Beauty</div>
+      </div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Skincare dengan bunga sakura, background pastel, studio light"</div>
+        <div class="gal-tag">✨ AI Generated · 24 detik</div>
+      </div>
+    </div>
+    <div class="gal-item g2">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content"><div class="gal-emoji">🏙️</div></div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Banner promo modern, gradient biru"</div>
+        <div class="gal-tag">✨ AI · 31 dtk</div>
+      </div>
+    </div>
+    <div class="gal-item g3">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content"><div class="gal-emoji">🍃</div></div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Konten feed organik, hijau natural"</div>
+        <div class="gal-tag">✨ AI · 27 dtk</div>
+      </div>
+    </div>
+    <div class="gal-item g4">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content"><div class="gal-emoji">🎨</div></div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Poster event, warm gradient, festive"</div>
+        <div class="gal-tag">✨ AI · 29 dtk</div>
+      </div>
+    </div>
+    <div class="gal-item g5">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content"><div class="gal-emoji">👗</div></div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Fashion editorial, purple tones"</div>
+        <div class="gal-tag">✨ AI · 33 dtk</div>
+      </div>
+    </div>
+    <div class="gal-item g6">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content"><div class="gal-emoji">☕</div></div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Foto produk kopi, warm & cozy"</div>
+        <div class="gal-tag">✨ AI · 22 dtk</div>
+      </div>
+    </div>
+    <div class="gal-item g7">
+      <div class="gal-bg"></div>
+      <div class="gal-center-content"><div class="gal-emoji">🚀</div></div>
+      <div class="gal-overlay">
+        <div class="gal-prompt">"Tech startup banner, futuristic"</div>
+        <div class="gal-tag">✨ AI · 28 dtk</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<div class="testi-section" id="testi">
+  <div class="testi-inner">
+    <div class="sec-tag">TESTIMONI</div>
+    <h2 class="sec-h2">MEREKA SUDAH<br>COBA, INI KATANYA</h2>
+    <div class="testi-grid reveal" style="margin-top:48px;">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Saya biasa bayar desainer Rp200rb per gambar. Sekarang <strong>satu chat di Telegram langsung jadi</strong>. Dalam sehari bisa buat 20+ konten. Hemat banget!"</p>
+        <div class="t-author">
+          <div class="t-av" style="background:#fef3c7;color:#92400e">KA</div>
+          <div>
+            <div class="t-name">Karina A.</div>
+            <div class="t-role">Owner Toko Skincare · Surabaya</div>
+            <div class="t-verified">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Klien terverifikasi
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Fitur kirim foto referensi itu <strong>game changer</strong>. Saya tinggal screenshoot konten yang saya suka, kirim ke bot, dan minta versi custom. Hasilnya mirip banget tapi original."</p>
+        <div class="t-author">
+          <div class="t-av" style="background:#ede9fe;color:#5b21b6">RP</div>
+          <div>
+            <div class="t-name">Reza P.</div>
+            <div class="t-role">Content Creator · 50k followers</div>
+            <div class="t-verified">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Klien terverifikasi
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="testi-text">"Kami pakai untuk buat variasi creative iklan Meta Ads. <strong>A/B testing jadi jauh lebih cepat</strong> karena bisa buat 10 variasi gambar dalam 5 menit. Conversion rate naik 30%."</p>
+        <div class="t-author">
+          <div class="t-av" style="background:#dcfce7;color:#166534">SN</div>
+          <div>
+            <div class="t-name">Sandra N.</div>
+            <div class="t-role">Digital Marketing Manager · Jakarta</div>
+            <div class="t-verified">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              Klien terverifikasi
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing">
+  <div class="sec-tag">HARGA</div>
+  <h2 class="sec-h2">BAYAR SEKALI,<br>PAKAI SELAMANYA</h2>
+  <p class="sec-sub">Setup bot di akun Telegram kamu sendiri. Tidak ada langganan, tidak ada biaya per gambar.</p>
+  <div class="pricing-grid reveal">
+    <div class="price-card">
+      <div class="price-tier">BASIC</div>
+      <div class="price-num"><span class="price-sup">Rp</span>450<span style="font-size:24px">rb</span></div>
+      <div class="price-note">Setup sekali · Bot milik kamu</div>
+      <div class="price-sep"></div>
+      <div class="feat-list">
+        <div class="fi on"><span class="fi-ic">✅</span> Bot Telegram personal</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Generate dari teks</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Resolusi standar (1024x1024)</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Bahasa Indonesia & Inggris</div>
+        <div class="fi off"><span class="fi-ic">—</span> Input foto referensi</div>
+        <div class="fi off"><span class="fi-ic">—</span> Multi-user akses</div>
+      </div>
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20mau%20order%20paket%20Basic%20Telegram%20AI%20Image%20Generator" class="btn-order bo-outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px;color:var(--wa)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>
+
+    <div class="price-card featured">
+      <div class="pop-tag">PALING LARIS 🔥</div>
+      <div class="price-tier">PROFESSIONAL</div>
+      <div class="price-num"><span class="price-sup">Rp</span>850<span style="font-size:24px">rb</span></div>
+      <div class="price-note">Setup sekali · Bot milik kamu</div>
+      <div class="price-sep"></div>
+      <div class="feat-list">
+        <div class="fi on"><span class="fi-ic">✅</span> Bot Telegram personal</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Generate dari teks</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Resolusi HD (1792x1024)</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Bahasa Indonesia & Inggris</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Input foto referensi (GPT Vision)</div>
+        <div class="fi off" style="color:rgba(255,255,255,0.3)"><span class="fi-ic">—</span> Multi-user akses</div>
+      </div>
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20mau%20order%20paket%20Professional%20Telegram%20AI%20Image%20Generator" class="btn-order bo-wa" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Order via WhatsApp
+      </a>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier">TEAM</div>
+      <div class="price-num"><span class="price-sup">Rp</span>1,5<span style="font-size:24px">jt</span></div>
+      <div class="price-note">Untuk tim / agency / bisnis</div>
+      <div class="price-sep"></div>
+      <div class="feat-list">
+        <div class="fi on"><span class="fi-ic">✅</span> Bot Telegram bisnis/grup</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Generate dari teks</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Resolusi HD custom</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Bahasa Indonesia & Inggris</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Input foto referensi</div>
+        <div class="fi on"><span class="fi-ic">✅</span> Multi-user akses (tim)</div>
+      </div>
+      <a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20mau%20info%20paket%20Team%20Telegram%20AI%20Image%20Generator%20untuk%20tim%20kami" class="btn-order bo-outline" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" style="width:17px;height:17px;color:var(--wa)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+        Diskusi via WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="guarantee reveal">
+    <div class="g-icon">🛡️</div>
+    <div>
+      <div class="g-title">GARANSI KEPUASAN PENUH</div>
+      <p class="g-desc">Kalau bot tidak berjalan sesuai yang dijanjikan atau kamu tidak puas dengan hasilnya dalam 14 hari pertama, saya perbaiki gratis atau refund penuh. Tidak ada risiko apapun dari sisi kamu.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="sec-tag">FAQ</div>
+  <h2 class="sec-h2">MASIH ADA<br>PERTANYAAN?</h2>
+  <div class="faq-wrap reveal">
+    <div class="faq-item">
+      <div class="faq-q">Apakah saya perlu punya akun OpenAI atau API key sendiri? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Ya, kamu perlu akun OpenAI dengan API key untuk menjalankan bot ini karena biaya generate gambar dikenakan per request ke API OpenAI. Saya akan bantu kamu setup akun dan API key-nya. Biaya API OpenAI sangat terjangkau — sekitar $0.04–0.08 per gambar (Rp600–1.200/gambar).</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Apakah perlu VPS atau server? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Ya, perlu VPS untuk menjalankan n8n workflow secara 24/7. VPS lokal bisa dapat dengan harga Rp50–100rb/bulan. Saya bantu setup-nya sekalian, jadi kamu tidak perlu repot teknis.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Seberapa bagus kualitas gambar yang dihasilkan? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Menggunakan model GPT-Image-1 dari OpenAI — ini salah satu model image generation terbaik saat ini. Resolusi bisa sampai 1792x1024 pixel, siap dipakai untuk posting sosmed, cetak, atau iklan digital tanpa perlu diedit.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Berapa lama proses setup hingga bot bisa dipakai? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Biasanya 1–2 hari setelah semua akses diberikan. Meliputi setup VPS, instalasi n8n, konfigurasi Telegram Bot, dan koneksi ke OpenAI API. Kamu akan dapat panduan lengkap cara pakainya.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Apakah gambar yang dihasilkan bebas copyright? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Gambar yang dihasilkan menggunakan API OpenAI. Berdasarkan kebijakan OpenAI, kamu memiliki hak atas gambar yang dibuat dan bisa digunakan untuk keperluan komersial. Namun tetap disarankan untuk tidak menyalin gaya artis spesifik atau karakter berhak cipta.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Bisa tidak kalau saya mau request fitur tambahan? <span class="faq-arrow">+</span></div>
+      <div class="faq-a">Bisa! Workflow n8n sangat fleksibel untuk dikustomisasi. Misalnya tambah fitur ukuran gambar yang bisa dipilih, style preset, watermark otomatis, atau integrasi ke platform lain. Diskusikan kebutuhanmu dan saya berikan estimasi biaya tambahan-nya.</div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <div class="cta-inner">
+    <span class="cta-tag">MULAI SEKARANG</span>
+    <h2>KETIK.<br><span class="tg-hl">KIRIM.</span><br><span class="stroke">SELESAI.</span></h2>
+    <p>Konten visual profesional dari Telegram dalam &lt; 30 detik.</p>
+    <a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20tertarik%20dengan%20AI%20Image%20Generator%20via%20Telegram.%20Boleh%20konsultasi%20gratis%3F" class="final-btn" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+      Chat WhatsApp Sekarang — Gratis
+    </a>
+    <div class="reassure-row">
+      <div class="rr"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>Garansi 14 hari</div>
+      <div class="rr"><svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>Setup 1–2 hari</div>
+      <div class="rr"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"/></svg>Konsultasi gratis</div>
+      <div class="rr"><svg viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"/></svg>25+ bisnis aktif</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="logo">Pixel<span style="color:var(--tg)">Bot</span></div>
+  <p>© 2025 PixelBot · Powered by n8n, Telegram & GPT-Image-1 · Made in Indonesia 🇮🇩</p>
+</footer>
+
+<!-- FLOAT WA -->
+<a href="https://wa.me/628XXXXXXXXXX?text=Halo%2C%20saya%20tertarik%20dengan%20Telegram%20AI%20Image%20Generator" class="float-wa" target="_blank">
+  <div class="float-pulse"></div>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.552 4.112 1.516 5.842L0 24l6.335-1.652A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.002-1.366l-.358-.214-3.76.98.999-3.645-.234-.374A9.818 9.818 0 0112 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.421-4.398 9.818-9.818 9.818z"/></svg>
+  <span>Hubungi Kami</span>
+</a>
+
+<script>
+// Scroll reveal
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach((e, i) => {
+    if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 60);
+  });
+}, { threshold: 0.07 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+
+// FAQ
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const open = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!open) item.classList.add('open');
+  });
+});
+
+// Animate gallery items on hover
+document.querySelectorAll('.gal-item').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    item.style.zIndex = '10';
+  });
+  item.addEventListener('mouseleave', () => {
+    item.style.zIndex = '';
+  });
+});
+</script>
+</body>
+</html>
